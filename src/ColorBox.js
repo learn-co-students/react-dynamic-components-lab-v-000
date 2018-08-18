@@ -3,11 +3,20 @@ import React, { Component } from 'react';
 export default class ColorBox extends Component {
   
   render() {
-    return (
-      <div className="color-box" style={{opacity: 2}}>
-        {/* your conditional code here! */}
-      </div>
-    )
+      let currentOpacity = this.props.opacity;
+
+      if (currentOpacity >= 0.2) {
+        currentOpacity -= 0.1;
+        return (
+          <div className="color-box" style={{opacity: currentOpacity + 0.1}}>
+            {
+              <ColorBox opacity={currentOpacity} />
+            }
+          </div>
+        )
+      } else {
+        return null
+      }
   }
   
 }

@@ -24,5 +24,5 @@ export default class ColorBox extends Component {
     //   }
     //   </div>
     // )
-//   }
-// }
+    //   }
+    // }

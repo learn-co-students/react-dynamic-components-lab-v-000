@@ -14,6 +14,7 @@ class App extends Component {
           <div id="seperator"></div>
           <div className="wrapper">
             <ColorBox opacity={1} />
+            
           </div>
       </div>
     )

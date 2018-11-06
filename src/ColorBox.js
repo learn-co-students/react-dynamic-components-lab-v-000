@@ -5,16 +5,12 @@ export default class ColorBox extends Component {
   render() {
 	let opty = this.props.opacity - .1;
 
-    if(this.props.opacity >= 0.2) {
+
     	return(
     		<div className="color-box" style={{opacity: this.props.opacity}}>
-    			<ColorBox opacity={opty} />
+    			{this.props.opacity >= 0.2 ? <ColorBox opacity={this.props.opacity - 0.1} /> : null}
     		</div>
-    		);
-    } else {
-    	return false;
-    }
-
+		);
   }
   
 }

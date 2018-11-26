@@ -63,7 +63,7 @@ describe('ColorBox', () => {
   })
   
   it('correctly reduces the opacity by 0.1 after first recursive call', () => {
-    expect(box.childAt(0).prop('opacity')).to.equal(0.9) 
+    expect(box.childAt(1).prop('opacity')).to.equal(0.9) 
   })
   
   it('correctly reduces the opacity by an additional 0.1 after the second recursive call', () => {

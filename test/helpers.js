@@ -1,7 +1,7 @@
 require('babel-register')();
 
 global.requestAnimationFrame = function (cb) {
-    return setTimeout(cb, 0);
+  return setTimeout(cb, 0);
 };
 
 var jsdom = require('jsdom').jsdom;

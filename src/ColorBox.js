@@ -2,22 +2,12 @@ import React, { Component } from 'react';
 
 export default class ColorBox extends Component {
 
-
-  render() {
-    var precise = x => Number.parseFloat(x).toPrecision(1);
-    let renderColorBox;
-    const newVal = +(precise(this.props.opacity - 0.1))
-
-    if (this.props.opacity >= 0.2) {
-      renderColorBox = <ColorBox opacity={newVal} />
-    } else {
-      renderColorBox = null
-    }
-    return (
-      <div className="color-box" style={{opacity: this.props.opacity}}>
-        { renderColorBox }
-      </div>
-    )
-  }
+render() {
+  return (
+    <div className="color-box" style={{opacity: this.props.opacity}}>
+      {this.props.opacity >= 0.2 ? <ColorBox opacity={this.props.opacity - 0.1} /> : null}
+    </div>
+  )
+}
 
 }

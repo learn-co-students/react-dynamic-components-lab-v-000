@@ -6,7 +6,7 @@ class App extends Component {
 
   // Nothing needs to change here!
   // Make note of what prop we are initially passing to `ColorBox` below!
-  //changes for test
+
   render() {
     return (
       <div id="app">

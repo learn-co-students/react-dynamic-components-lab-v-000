@@ -52,4 +52,6 @@ body, html, #root, #app {
   padding: 3px;
   margin: 10px;
   border-radius: 10px;
+	align-items: center;
+
 }

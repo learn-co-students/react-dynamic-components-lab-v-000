@@ -1,9 +1,9 @@
 body, html, #root, #app {
+  font-family: sans-serif;
+  height: 100%;
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
   width: 100%;
-  height: 100%;
 }
 
 #app {
@@ -13,43 +13,43 @@ body, html, #root, #app {
 }
 
 .wrapper {
-  height: 47.5%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
   background-color: #0ad;
+  display: flex;
+  flex-direction: column;
+  height: 47.5%;
+  justify-content: center;
+  width: 100%;
 }
 
 
 .color-box {
-  border: 1em solid #444;
-  height: 90%;
-  width: 90%;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  border: 1em solid #444;
   border-radius: 50px;
+  display: flex;
+  height: 90%;
+  justify-content: center;
+  width: 90%;
 }
 
 #blog-post {
-  text-align: center;
   background-color: orange;
+  text-align: center;
 }
 
 #seperator {
-  width: 100%;
-  height: 5%;
   background-color: grey;
+  height: 5%;
+  width: 100%;
 }
 
 .comment {
-  width: 80%;
-  border: 5px solid purple;
-  text-align: center;
   background-color: white;
-  padding: 3px;
-  margin: 10px;
   border-radius: 10px;
+  border: 5px solid purple;
+  margin: 10px;
+  padding: 3px;
+  text-align: center;
+  width: 80%;
 }

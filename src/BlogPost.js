@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { Comment } from './Comment';
+import React, { Component } from 'react'; // not defaulted use {}
+import Comment from './Comment'; // default export without {}
 // are we missing an import?
 
 export default class BlogPost extends Component {
@@ -21,8 +21,8 @@ export default class BlogPost extends Component {
         You only grew accustomed to the salt<br/>
         I was born in it<br/>
         <Comment commentText={comments[0]} />
-        <Comment commentText={comments[0]} />
-        <Comment commentText={comments[0]} />
+        <Comment commentText={comments[1]} />
+        <Comment commentText={comments[2]} />
       </div>
     );
   }

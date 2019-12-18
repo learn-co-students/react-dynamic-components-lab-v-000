@@ -13,7 +13,7 @@ class App extends Component {
           <BlogPost />
           <div id="seperator"></div>
           <div className="wrapper">
-            <ColorBox opacity={1} />
+            <ColorBox opacity={1} />       
           </div>
       </div>
     )

@@ -19,7 +19,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "mocha --timeout 5000 -w test/helpers.js test/*.js",
+    "test": "mocha --timeout 5000 test/helpers.js test/*.js",
     "eject": "react-scripts eject"
   },
   "devDependencies": {
@@ -35,5 +35,11 @@
     "jsdom-global": "3.0.2",
     "mocha": "^5.2.0",
     "sinon": "^6.3.5"
-  }
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }

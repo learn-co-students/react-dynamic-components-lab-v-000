@@ -83,7 +83,7 @@ created and exported)
     `ColorBoxes` rendering!)
   - instead, the render method should return `null`
 
-###### Hint on ColorBox
+##### Hint on ColorBox
 
 - **Watch out** for endless recursion! If your `ColorBox` component has no break
   condition to stop it from always rendering another `ColorBox`, your browser will
